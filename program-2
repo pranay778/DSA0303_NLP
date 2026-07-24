@@ -1,0 +1,7 @@
+text = input("Enter a paragraph: ")
+
+sentences = text.split(".")
+
+for i in range(len(sentences)):
+    if sentences[i].strip() != "":
+        print("Sentence", i + 1, ":", sentences[i].strip())
