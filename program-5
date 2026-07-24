@@ -1,0 +1,12 @@
+text = input("Enter a sentence: ")
+
+stop_words = ["is", "am", "are", "the", "a", "an", "in", "on", "of", "to", "and"]
+
+words = text.split()
+
+print("After removing stop words:")
+
+for word in words:
+    if word.lower() not in stop_words:
+        print(word)
+        
