@@ -1,0 +1,7 @@
+text = input("Enter a text: ")
+
+print("Original Text:", text)
+
+text = text.lower()
+
+print("Lowercase Text:", text)
