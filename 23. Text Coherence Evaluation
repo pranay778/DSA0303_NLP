@@ -1,0 +1,17 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+sentences = [
+    "Artificial intelligence is important.",
+    "Machine learning is a part of artificial intelligence.",
+    "Dogs are animals."
+]
+
+vectorizer = TfidfVectorizer()
+
+vectors = vectorizer.fit_transform(sentences)
+
+similarity = cosine_similarity(vectors)
+
+print("Coherence Matrix:")
+print(similarity)
