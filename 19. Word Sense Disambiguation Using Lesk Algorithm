@@ -1,0 +1,16 @@
+import nltk
+
+nltk.download('wordnet')
+nltk.download('punkt_tab')
+
+from nltk.wsd import lesk
+
+sentence = "I went to the bank to deposit money"
+
+word = "bank"
+
+sense = lesk(sentence.split(), word)
+
+print("Word:", word)
+print("Sense:", sense)
+print("Meaning:", sense.definition())
