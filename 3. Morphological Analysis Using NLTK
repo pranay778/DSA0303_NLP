@@ -1,0 +1,11 @@
+import nltk
+nltk.download('punkt_tab')
+
+from nltk.tokenize import word_tokenize
+
+text = "The students are studying in the classroom."
+
+words = word_tokenize(text)
+
+for word in words:
+    print(word, "Length:", len(word))
