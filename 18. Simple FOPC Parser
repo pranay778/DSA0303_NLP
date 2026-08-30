@@ -1,0 +1,7 @@
+expression = input("Enter logical expression: ")
+
+if "(" in expression and ")" in expression:
+    print("Valid basic FOPC expression")
+
+else:
+    print("Invalid expression")
