@@ -1,0 +1,14 @@
+import nltk
+
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger_eng')
+
+from nltk import word_tokenize, pos_tag
+
+text = "Ravi is studying computer science."
+
+words = word_tokenize(text)
+
+tags = pos_tag(words)
+
+print(tags)
