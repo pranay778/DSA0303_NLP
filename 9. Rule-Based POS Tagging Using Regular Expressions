@@ -1,0 +1,19 @@
+import re
+
+words = ["running", "quickly", "beautiful", "cat"]
+
+for word in words:
+
+    if re.search(r"ing$", word):
+        tag = "VERB"
+
+    elif re.search(r"ly$", word):
+        tag = "ADVERB"
+
+    elif re.search(r"ful$", word):
+        tag = "ADJECTIVE"
+
+    else:
+        tag = "NOUN"
+
+    print(word, "->", tag)
