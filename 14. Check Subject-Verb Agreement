@@ -1,0 +1,16 @@
+singular_subjects = ["he", "she", "it", "ravi"]
+plural_subjects = ["they", "we", "students"]
+
+sentence = input("Enter a sentence: ").lower().split()
+
+subject = sentence[0]
+verb = sentence[1]
+
+if subject in singular_subjects and verb.endswith("s"):
+    print("Agreement is correct")
+
+elif subject in plural_subjects and not verb.endswith("s"):
+    print("Agreement is correct")
+
+else:
+    print("Agreement may be incorrect")
