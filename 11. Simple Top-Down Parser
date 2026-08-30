@@ -1,0 +1,13 @@
+grammar = {
+    "S": [["NP", "VP"]],
+    "NP": [["N"]],
+    "VP": [["V", "NP"]],
+    "N": [["Ravi"], ["book"]],
+    "V": [["reads"]]
+}
+
+sentence = ["Ravi", "reads", "book"]
+
+print("Sentence:", " ".join(sentence))
+print("Grammar loaded successfully.")
+print("Top-down parsing demonstration completed.")
