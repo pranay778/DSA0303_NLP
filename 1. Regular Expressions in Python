@@ -1,0 +1,13 @@
+import re
+
+text = "My email is student@gmail.com and my number is 9876543210"
+
+# Search email
+email = re.search(r'\S+@\S+\.\S+', text)
+
+if email:
+    print("Email found:", email.group())
+
+# Find numbers
+numbers = re.findall(r'\d+', text)
+print("Numbers:", numbers)
